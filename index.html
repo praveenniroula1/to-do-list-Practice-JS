@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading">
+        <h1>Weekly Hours Management</h1>
+      </div>
+
+      <div class="input">
+        <input
+          id="taskName"
+          class="first"
+          placeholder="Task name"
+          required
+          type="string"
+        />
+        <input
+          class="second"
+          placeholder="Hours"
+          required
+          type="number"
+          id="taskHrs"
+        />
+        <button id="buttons" type="button" class="btn btn-dark">
+          Add Task
+        </button>
+      </div>
+      <hr />
+
+      <div class="cards">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">To-do-List</h5>
+            <hr />
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <h5 class="card-title">Not-To-Do-List</h5>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

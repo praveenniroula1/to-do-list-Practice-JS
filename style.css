@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(255, 166, 0, 0.538);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  gap: 1rem;
+}
+.first {
+  border: 2px solid black;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+.second {
+  border: 2px solid black;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+.btn {
+  padding: 12px;
+}
+hr {
+  border: 2px solid black;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.card {
+  height: 50vh;
+  margin: 2rem;
+  border-radius: 50px;
+}
+h5 {
+  text-align: center;
+}
+input {
+  border-radius: 20px;
+}
