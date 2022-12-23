@@ -2,13 +2,24 @@ let goodTask = [""];
 let badtask = [""];
 const taskName = document.getElementById("taskName");
 
-const handleOnChange = (e) => {
-  const { value } = e.target;
-  console.log(value);
+const fullData = {
+  taskName: "",
+  taskHrs: "",
 };
 
-const handleOnClick = (e) => {
-  const { ...value } = formData;
-  console.log(formData);
-};
-taskName.addEventListener("change", handleOnChange());
+taskName.addEventListener("keyup", () => {
+  const taskData = taskName.value;
+  console.log(taskData);
+});
+
+const taskHrs = document.getElementById("taskHrs");
+taskHrs.addEventListener("keyup", () => {
+  const hrsData = taskHrs.value;
+  console.log(hrsData);
+});
+
+const button = document.getElementById("buttons");
+button.addEventListener("click", () => {
+  const dta = (taskName += taskName);
+  console.log(dta);
+});
