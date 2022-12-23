@@ -9,4 +9,7 @@ const handleOnChange = (e) => {
 
 taskName.addEventListener("change", handleOnChange());
 
-const handleOnClick = (e) => {};
+const handleOnClick = (e) => {
+  const { ...value } = formData;
+  console.log(formData);
+};
