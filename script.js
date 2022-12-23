@@ -8,3 +8,5 @@ const handleOnChange = (e) => {
 };
 
 taskName.addEventListener("change", handleOnChange());
+
+const handleOnClick = (e) => {};
