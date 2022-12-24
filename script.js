@@ -2,11 +2,6 @@ let goodTask = [""];
 let badtask = [""];
 const taskName = document.getElementById("taskName");
 
-const fullData = {
-  taskName: "",
-  taskHrs: "",
-};
-
 taskName.addEventListener("keyup", () => {
   const taskData = taskName.value;
   console.log(taskData);
@@ -18,8 +13,23 @@ taskHrs.addEventListener("keyup", () => {
   console.log(hrsData);
 });
 
+const screen = (str) => {
+  goodTask.innerText = "no datas found!!!";
+};
+
 const button = document.getElementById("buttons");
 button.addEventListener("click", () => {
-  const dta = (taskName += taskName);
-  console.log(dta);
+  const fullData = {
+    taskName: "taskData",
+    taskHrs: "hrsData",
+  };
+  goodTask.push(fullData);
+  screen(goodTask);
+  console.log(fullData);
+  let str = "";
+  goodTask.map((item, i) => {
+    str += `
+    <p class="card-title">${screen}</p>
+    `;
+  });
 });
