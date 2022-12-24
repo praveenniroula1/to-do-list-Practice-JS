@@ -14,14 +14,14 @@ taskHrs.addEventListener("keyup", () => {
 });
 
 const screen = (str) => {
-  goodTask.innerText = "no datas found!!!";
+  goodTask.innerText = str || "no datas found!!!";
 };
 
 const button = document.getElementById("buttons");
 button.addEventListener("click", () => {
   const fullData = {
-    taskName: "taskData",
-    taskHrs: "hrsData",
+    taskName: "",
+    taskHrs: "",
   };
   goodTask.push(fullData);
   screen(goodTask);
@@ -29,7 +29,7 @@ button.addEventListener("click", () => {
   let str = "";
   goodTask.map((item, i) => {
     str += `
-    <p class="card-title">${screen}</p>
+    <p class="card-title">${item.screen}</p>
     `;
   });
 });
